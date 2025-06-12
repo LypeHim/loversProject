@@ -1,0 +1,230 @@
+body {
+    font-family: sans-serif;
+    background-color: #ffc0cb;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Intro */
+#introOverlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, #ffe6eb, #ffd6e0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+#introOverlay.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.intro-box {
+    text-align: center;
+    color: #d81b60;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro-box h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.intro-box p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.progress-container {
+    width: 80%;
+    max-width: 400px;
+    height: 4px;
+    background-color: #ffd1dc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #d81b60;
+    transition: width 0.2s ease;
+}
+
+/*fim intro*/
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 340px;
+}
+
+main .slider {
+    width: 100%;
+    margin: auto;
+}
+
+.slider .slick-list {
+    border-radius: 12px;
+}
+
+.slider .slide {
+    max-width: 100%;
+    max-height: 700px;
+}
+
+.slider img {
+    border-radius: 12px;
+    object-fit: contain;
+    margin: 0 auto;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+section#time_together {
+    display: flex;
+    padding-top: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#time_together h2 {
+    font-size: 22px;
+}
+
+section#time_together p {
+    font-weight: 700;
+}
+
+#tempo-juntos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    aspect-ratio: 12/12;
+}
+
+#tempo-juntos div {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    background-color: #b39ddb;
+}
+
+section#tabs {
+    width: 100%;
+    margin: 20px auto 0px;
+    font-family: sans-serif;
+}
+
+section#tabs h2 {
+    text-align: center;
+}
+
+.tab-buttons {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #ccc;
+}
+
+.tab-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 2px 0px;
+}
+
+.tab-buttons button.active {
+    background-color: #3948e6;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff0f5;
+    max-width: 100%;
+}
+
+.tab-content.active {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, 300px);
+    justify-content: center;
+    gap: 10px;
+}
+
+.tab-content .gallery-item img {
+    width: 300px;
+}
+
+@media screen and (min-width: 565px) {
+    main {
+        width: 420px;
+    }
+
+    .slider {
+        width: 80%;
+    }
+
+    #tempo-juntos {
+        aspect-ratio: 15/12;
+    }
+
+    section#tabs {
+        margin: 120px auto 0px;
+        width: 80%;
+    }
+    
+    .tab-buttons button {
+        margin: 0px;        
+    }
+
+    .tab-buttons {
+        flex-direction: row;
+    }
+    
+    .tab-content.active {
+        gap: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        width: 620px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

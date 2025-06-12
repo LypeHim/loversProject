@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amo você nena! 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+
+    <div id="introOverlay">
+        <div class="intro-box">
+            <div class="intro-header">
+                <h2>Bem-vindo ao nosso cantinho 💕</h2>
+                <p>Aproveite cada momento com muito amor!</p>
+            </div>
+            <div class="progress-area">
+                <div class="progress-label" id="percentText">0%</div>
+                <span id="cute-phrases"></span>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+    <h1>Bem-vinda ao site dedicado a nós!</h1>
+    </header>
+
+    <main>
+        <div class="slider">
+            <div class="slide"><img src="./assets/foto1.png" alt="Slide 1"></div>
+            <div class="slide"><img src="./assets/foto2.png" alt="Slide 2"></div>
+            <div class="slide"><img src="./assets/foto3.jpeg" alt="Slide 3"></div>
+        </div>
+    </main>
+
+    <!-- <span style="text-align: center">Te amo, te amo, te amo, teee amo, te amo!</span>
+    <p class="poetry">Neste dia especial, </p> -->
+
+    <section id="time_together">
+        <h2>Compartilhando momentos há:</h2>
+        <div id="tempo-juntos" style="font-size: 1.5rem; font-weight: bold;">
+            <div id="anos"></div>
+            <div id="meses"></div>
+            <div id="dias"></div>
+            <div id="horas"></div>
+            <div id="minutos"></div>
+            <div id="segundos"></div>
+        </div>
+        <p>Desde 13 de janeiro de 2024</p>
+    </section>
+
+    <section id="tabs">
+        <h2>Nossas viagens e Aventuras</h2>
+        <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="tab1">Tapes</button>
+            <button class="tab-btn" data-tab="tab2">Três Coroas</button>
+            <button class="tab-btn" data-tab="tab3">Palhoça</button>
+            <button class="tab-btn" data-tab="tab4">Tavares</button>
+        </div>
+    
+        <div id="tab1" class="tab-content active">
+            <div class="gallery-item"><img src="./assets/tapes/001.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/tapes/002.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/tapes/003.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/tapes/004.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/tapes/005.jpg" alt=""></div>
+        </div>
+        <div id="tab2" class="tab-content">
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/001.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/002.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/003.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/004.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/005.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/006.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/007.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/008.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/009.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/010.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/011.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/012.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/013.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/014.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/015.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/016.jpg" alt=""></div>
+            <div class="gallery-item"><img src="./assets/gallery-3-coroas/017.jpg" alt=""></div>
+        </div>
+        <div id="tab3" class="tab-content">
+            <div class="gallery-item"><img src="" alt=""></div>
+            <div class="gallery-item"><img src="" alt=""></div>
+            <div class="gallery-item"><img src="" alt=""></div>
+            <div class="gallery-item"><img src="" alt=""></div>
+            <div class="gallery-item"><img src="" alt=""></div>
+            <div class="gallery-item"><img src="" alt=""></div>
+        </div>
+        <div id="tab4" class="tab-content">
+            <div class="gallery-item"><img src="" alt=""></div>
+            <div class="gallery-item"><img src="" alt=""></div>
+            <div class="gallery-item"><img src="" alt=""></div>
+            <div class="gallery-item"><img src="" alt=""></div>
+            <div class="gallery-item"><img src="" alt=""></div>
+            <div class="gallery-item"><img src="" alt=""></div>
+        </div>
+    </section>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <!-- jQuery (obrigatório para Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="script.js"></script> <!-- Opcional -->
+</body>
+</html>
